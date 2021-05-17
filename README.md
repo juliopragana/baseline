@@ -4,4 +4,4 @@ Sistema na qual faz consulta no ERP da Empresa e trás informações referente a
 exibindo elas em Datatables. 
 
 Tecnologia utilizada: PHP7 + Mysql
-Frameworks: Bootstrpa4, RainTPL, SlimFramework e Jquert Datatables
+Frameworks: Bootstrpa4, RainTPL, SlimFramework e Jquery Datatables

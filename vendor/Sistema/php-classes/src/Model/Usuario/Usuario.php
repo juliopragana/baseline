@@ -20,16 +20,16 @@ class Usuario extends Model
         if (empty($user) || empty($password)) return false;
 
         // active airectory server
-        $ldap_host = "192.168.1.236";
-        // $ldap_host = "192.168.232.240";
+        $ldap_host = "host";
+        
 
         // active directory DN (base location of ldap search)
-        $ldap_dn = "DC=mvrec,DC=local";
+        $ldap_dn = "DC=";
 
         // $ldap_dn = "DC=hospidata,DC=com,DC=br";
 
         // active directory manager group name
-        $group_tic = "G_PORTAL_GTIC";
+        $group_tic = "G_GROUP";
         // $group_manager_gestor = "G_PORTAL_GESTOR";
         // $group_manager_gestor_gg = "G_PORTAL_GESTOR_GG";
         // $group_manager_tic = "G_PORTAL_ADMIN";
@@ -59,7 +59,7 @@ class Usuario extends Model
 
 
             $sql = new Sql();
-            // $user = 'julio.pragana';
+            
             $usuario = $sql->select("select * from user_control where usuario = :user", array(
                 ":user" => $user
             ));

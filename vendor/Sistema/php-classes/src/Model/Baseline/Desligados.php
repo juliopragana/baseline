@@ -26,26 +26,22 @@ class Desligados extends Model{
         $user = "userAD";
         $password = "passAD";
         // active airectory server
-        $ldap_host = "192.168.1.236";
-        // $ldap_host = "192.168.232.240";
+        $ldap_host = "host";
+        
     
         // active directory DN (base location of ldap search)
-       
-        ## OU=INFRAESTRUTURA,DC=mvrec,DC=local
-        ##  OU=MV,DC=mvrec,DC=local
+      
        
         $ldap_dn = $ldapDN;
     
-        // $ldap_dn = "DC=hospidata,DC=com,DC=br";
+        
     
         // active directory manager group name
-        $group_tic = "G_PORTAL_GTIC";
-        // $group_manager_gestor = "G_PORTAL_GESTOR";
-        // $group_manager_gestor_gg = "G_PORTAL_GESTOR_GG";
-        // $group_manager_tic = "G_PORTAL_ADMIN";
+        $group_tic = "G_GRUPO";
+        
     
         // domain, for purposes of constructing $user
-        $ldap_usr_dom = '@mvrec';
+        $ldap_usr_dom = '@domain';
         // $ldap_usr_dom = '@hospidata';
     
         // connect to active directoryr

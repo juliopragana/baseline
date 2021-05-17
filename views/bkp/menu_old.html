@@ -1,0 +1,53 @@
+<div class="main-content" id="panel">
+ 
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical  fixed-left navbar-expand-xs navbar-info bg-ligth" id="sidenav-main">
+      <div class="scrollbar-inner">
+        
+        <div class="sidenav-header  align-items-center bg-primary">
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="../res/assets/img/baseline.png" class="navbar-brand-img" alt="...">
+          </a>
+        </div>
+        <div class="navbar-inner">
+        
+          <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          
+            <ul class="navbar-nav mb-4">
+
+              <li class="nav-item ml-2">
+
+                <a href="#" class="nav-link text-blue" onclick="carregar_todos()">
+                  <i class="ni ni-tag text-blue"></i>
+                    <span class="nav-link-text">Todos</span> 
+                      {loop="$qtd"}
+                        <span class="badge badge-primary">{$value.QTD}</span>
+                      {/loop} 
+                </a>
+                  <!-- <a class="nav-link active" href="#" onclick="carregar_todos()">
+                  <span class="nav-link-text">Todos</span>
+                  {loop="$qtd"}
+                  <span class="badge badge-primary">{$value.QTD}</span>
+                  {/loop} -->
+                </a>
+              </li>
+              {loop="$cc"}
+              <li class="nav-item ml-2">
+                  <a href="#" class="nav-link active" onclick="carregar_por_gcc('{$value.GRUPO_CENTRO_CUSTOS}')"><span class="nav-link-text">{$value.GRUPO_CENTRO_CUSTOS}</span> <span class="badge badge-primary">{$value.QTD}</span></a>
+                  <!-- <a class="nav-link active btn-cc" href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top" onclick="carregar_por_gcc('{$value.GRUPO_CENTRO_CUSTOS}')"> -->
+                  
+                  
+                  </a>
+              </li>
+              {/loop}
+              
+              
+              
+
+            </ul>
+          
+        
+          </div>
+        </div>
+      </div>
+    </nav>

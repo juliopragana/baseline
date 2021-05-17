@@ -1,0 +1,19 @@
+{
+    "name": "jpragana/consulta_ocomon",
+    "authors": [
+        {
+            "name": "Service Desk",
+            "email": "servicedesk@mv.com.br"
+        }
+    ],
+    "require": {
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0",
+        "ircmaxell/random-lib": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sistema\\": "vendor\\Sistema\\php-classes\\src/"
+        }
+    }
+}

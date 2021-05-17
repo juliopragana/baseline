@@ -84,7 +84,7 @@ $app->get('/ja-desligados', function () {
     //   var_dump($situaCAO);
 
     // // echo $nome;
-    // // $user = Desligados::ConsultarUsuarios('JULIO HENRIQUE BARROS PRAGANA');
+   
 
 
 
@@ -101,7 +101,7 @@ $app->get('/ja-desligados', function () {
 
 $app->get('/listar-usuariosAD', function(){
 
-    $res = Desligados::ConsultarUsuarios('OU=MV,DC=mvrec,DC=local', 'Even Marinho Pedrosa do Vale de Lima');
+    $res = Desligados::ConsultarUsuarios('OU=MV,DC=mvrec,DC=local', 'NOME COMPLETO');
 
     print_r($res);
     // $page = new PageDesligados();

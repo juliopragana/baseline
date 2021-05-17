@@ -36,7 +36,7 @@ $app->get('/ja-desligados', function () {
     foreach($ultimosDeslig as $value){
 
              
-        $userAD = Desligados::ConsultarUsuarios('DC=mvrec,DC=local', $value['NOME']);
+        $userAD = Desligados::ConsultarUsuarios('DC=', $value['NOME']);
       
        
         foreach($userAD as $ValueAD){

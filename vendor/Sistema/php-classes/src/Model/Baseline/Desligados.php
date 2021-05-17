@@ -42,7 +42,7 @@ class Desligados extends Model{
     
         // domain, for purposes of constructing $user
         $ldap_usr_dom = '@domain';
-        // $ldap_usr_dom = '@hospidata';
+        
     
         // connect to active directoryr
         $ldap = ldap_connect($ldap_host);
